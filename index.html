@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Carousel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <img
+          src="Assets/madina profile pic.jfif"alt="profile image"
+        />
+        <div>
+          <p>Madina & Makkah</p>
+          <i class="ri-verified-badge-fill"></i>
+        </div>
+      </header>
+      <div class="card">
+        <div id="carousel" class="visual">
+          <img
+            id="card1"
+            src="Assets/makkah gate.jfif"alt="Madina"
+          />
+          <img
+            id="card2"
+            src="Assets/WhatsApp Image 2024-01-10 at 12.34.34 AM.jpeg"alt="Madina"
+          />
+          <img
+            id="card3"
+            src="Assets/makkah2.jfif"alt="Makkah Gate"
+          />
+          <img
+            id="card4"
+            src="Assets/WhatsApp Image 2024-01-10 at 12.34.35 AM.jpeg"alt="Makkah"
+          />
+          <img
+            id="card5"
+            src="Assets/madina profile pic.jfif"alt="Makkah"
+          />
+
+          <div class="controls">
+            <button
+              id="prev"
+              class="previous"
+              onclick="carousel.scrollBy(-100, 0)"
+            >
+              <i class="ri-arrow-left-circle-fill"></i>
+            </button>
+            <button id="next" class="next" onclick="carousel.scrollBy(100, 0)">
+              <i class="ri-arrow-right-circle-fill"></i>
+            </button>
+          </div>
+
+          <div id="pagination" class="pagination"></div>
+        </div>
+      </div>
+      <div class="social">
+        <div class="inter">
+          <div>
+            <button onclick="heartHandler()">
+              <i class="ri-heart-line"></i>
+            </button>
+
+            <button onclick="chatHandler()">
+              <i class="ri-chat-3-line"></i>
+            </button>
+            <button onclick="shareHandler()">
+              <i class="ri-share-line"></i>
+            </button>
+          </div>
+
+          <button onclick="bookmarkHandler()">
+            <i class="ri-bookmark-line"></i>
+          </button>
+        </div>
+
+        <p>3,802 likes</p>
+        <p>Getting ready to going Makkah & Madina</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
